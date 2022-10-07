@@ -1,0 +1,144 @@
+body {
+    background-color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color:lightgray;
+}
+
+
+.header {
+    padding: 15px;
+    font-size: 25px;    
+}
+
+.header h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: cadetblue;
+}
+
+.header div {
+    padding: 20px;
+    margin-right: 15px;
+    float: right;
+    font-size: 22px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div li {
+    display: inline-block;
+    margin-left: 15px;
+    color: black;
+}
+
+
+.info {
+    height: 50px;
+    margin-bottom: 40px;
+
+}
+
+.content {
+    font-size: 60px;
+    width: 55%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.line {
+    border-left: thick solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.about-me {
+    font-size: 35px;
+    margin-left: 10px;
+    padding: 20px;
+    height: 15px;
+}
+
+.work {
+    font-size: 35px;
+  padding-top: 35px;
+}
+
+
+.projects {
+    display:inline-block;
+    padding-left: 150px;
+}
+
+.img {
+    border: 2px solid;
+    opacity: 0.7;
+}
+
+.img:hover {
+    opacity: 1.0;
+}
+
+.work-line {
+    border-left: thick solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    position: relative;
+}
+
+
+.text-block {
+    padding-left: 25px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    position:absolute;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    font-size:medium
+
+}
+
+
+.contact {
+    font-size: 35px;
+    padding-top: 170px;
+    padding-bottom: 25px;
+}
+
+.contact-line {
+    border-left: thick solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact li {
+    word-spacing: 20px;
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+p {
+    text-align: left;
+    padding-left: 25px;
+    font-size: 16px;
+    width: 65%;
+
+
+}
+
+footer {
+    padding: 80px 0px 0px 22px;
+}
+
