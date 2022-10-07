@@ -1,5 +1,5 @@
 body {
-    background-color: cyan;
+    background-color: rgb(200, 233, 233);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color:lightgray;
@@ -7,16 +7,27 @@ body {
 
 
 .header {
-    padding: 20px;
-    font-size: 25px;  
+    padding: 20px; 
     background-color:rgb(108, 108, 131) ;  
     color: white;
 }
 
 .header h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    display: inline-block;
     font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
 
+a {
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }
 
 .header div {
@@ -32,9 +43,7 @@ body {
 
 .header div li {
     display: inline-block;
-    margin-left: 15px;
-    color: black;
-    text-decoration: none;
+    margin-left: 25px;
 }
 
 
@@ -51,27 +60,40 @@ body {
     padding-bottom: 15px;
 }
 
+.about-me h2 {
+    text-shadow: 3px 3px 3px rgb(108, 108, 131);
+}
+
 .about-me {
-    font-size: 35px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-left: 10px;
+    height: 15px;
+}
+
+.work h2 {
+    text-shadow: 3px 3px 3px rgb(108, 108, 131);
+}
+
+.work {
+    font-size: 25px;
     margin-left: 10px;
     padding: 20px;
     height: 15px;
 }
 
-.work {
-    font-size: 35px;
-  padding-top: 35px;
-}
-
 
 .projects {
-    display:inline-block;
+
+    display:inline-flexbox;
     padding-left: 150px;
 }
 
 .img {
-    border: 2px solid;
+    border: 4px solid rgb(71, 68, 68);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
     opacity: 0.7;
+    display: inline-block;
 }
 
 .img:hover {
@@ -88,21 +110,42 @@ body {
     position: relative;
 }
 
+.container-2, .container-3 {
+    display: inline-block;
+    position: relative;
+}
+
+.container p {
+    font-size: 8px;
+    padding-left: 2px;
+}
+
+.container-2 p {
+    font-size: 8px;
+    padding-left: 2px;
+}
+
+.container-3 p {
+    font-size: 8px;
+    padding-left: 2px;
+}
+
 
 .text-block {
-    padding-left: 25px;
-    background-color: whitesmoke;
-    opacity: 0.8;
-    position:absolute;
-    text-align:center;
-    color: rgb(0, 0, 0);
-    font-size:medium
-
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(71, 68, 68);
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.7;
 }
 
 
 .contact {
-    font-size: 35px;
+    font-size: 25px;
     padding-top: 170px;
     padding-bottom: 25px;
 }
@@ -115,12 +158,17 @@ body {
 
 .contact ul {
     list-style-type: none;
+    background-color: rgb(108, 108, 131);
 }
 
 .contact li {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     word-spacing: 20px;
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -129,7 +177,7 @@ p {
     text-align: left;
     padding-left: 25px;
     font-size: 16px;
-    width: 65%;
+    width: 100%;
 
 
 }
@@ -138,3 +186,17 @@ footer {
     padding: 80px 0px 0px 22px;
 }
 
+@media screen and (max-width: 768px) {
+    header,
+    .img {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    header,
+    .img{
+      flex-direction: column;
+    }
+  }
+    
